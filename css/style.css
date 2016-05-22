@@ -22,7 +22,7 @@ header p {
 }
 
 nav {
-	border: 3px solid #000;
+	border: 3px solid #fff;
     width: auto;
     margin-left: auto;
     margin-right: auto;
@@ -84,7 +84,7 @@ aside {
     margin-right: auto;
 	float: right; 
 	text-align: center;
-	background-color: #000;
+	background-color: #fff;
 	border: 3px solid #000;
 }
 
