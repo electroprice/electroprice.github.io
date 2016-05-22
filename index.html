@@ -1,7 +1,949 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+    <head>
+      <meta charset="utf-8">
+       <title>Главная</title>
+       <link href="css/style.css" rel="stylesheet" type="text/css" />  
+       <script type="text/javascript" src="js/showpic.js"></script> 
+       <script src="js/price_block.js"></script> 
+       </head>
+    <body>
+        <header>
+<p>Расценки на электромонтажные работы</p>
+        </header>
+
+       <nav>
+  <h1><b>Навигация</b></h1>
+    <h4>
+    <a href="#provodka">Электропроводка,<br/>
+    Кабельканалы</a>
+    <hr/>
+    <a href="#shtrob">Штробление</a>
+    <hr/>
+    <a href="#avtomat">Автоматические выключатели,<br/>
+    УЗО</a>
+    <hr/>
+    <a href="#roz">Розетки, Выключатели</a>
+    <hr/>
+    <a href="#bra">Люстры,БРА.Светильники</a>
+    <hr/>
+    <a href="#lamp">Замена ламп,дросселей,<br>
+    трансформаторов и т.д.</a>
+    <hr/>
+    <a href="#obor">Установка оборудования</a>
+    <hr/>
+    <a href="#dem">Демонтажные работы</a>
+    <hr/>
+    <a href="#podg"> Подготовительные работы</a>
+    <hr/>
+    <a href="#uslugi">Услуги Электрика</a>
+    <hr/>
+     <a href="#prim">Примечание</a>
+    <hr/></h4>
+    <script src="js/price_block.js"></script>
+<button onclick="checkPriceAll();">Подсчитать полную сумму</button>
+   <p id= "Allprice"></p>
+</nav>
+
+
+
+ <aside>
+ <h1><b>Контакты</b></h1>
+ <hr/>
+        <p> <b>@</b>Mail:&nbsp; </p>
+        <b>&nbsp;zhylenko.work@gmail.com&nbsp;</b>
+        <hr/> 
+        Сайт предоставлен<br> в ознакомительных целях<br>
+        и быстрому подсчёту<br> стоимости работ.<br>
+        <b>НО</b> не стоит забывать,<br>что
+        компьютер тоже <br>может ошибаться.  
+         <hr/>                
+
+</form>
+
+
+    </aside>
+
+                           <article>
+
+
+<table>
+<td>
+<p>Наименование работ
+</p>
+</td>
+<td>
+   <p> Ед. Изм. </p>
+</td>
+<td>
+  <p>Цена(грн.)</p>
+</td>
+<td>
+   <p>Выбрать</br>
+   Количество</p>
+</td>
+                                               <tr>
+                                                <td colspan="4">
+                                             <h4><a name="provodka"></a><i><b>1.Электропроводка,Кабельканалы </b></i></h4>
+                                                 </td>
+                                                    </tr>
+<td name = "rabotu" align = "left">
+ <b>1.1</b>  Монтаж проводки в кабельканале
+     <hr/>
+     <b>1.2</b>  Монтаж проводки в штробе
+      <hr/>
+     <b>1.3</b>  Монтаж проводки открытым способом в гофре
+      <hr/>
+     <b>1.4</b> Кабельканал шириной до 25мм (Гипсокартон/кирпич/бетон)
+      <hr/>
+  <b>1.5</b> Кабельканал шириной свыше 25мм
+   (Г-ртон/кирпич/бетон)
+</td>
+<td name = "ed.izm">
+    <b>м.п.</b>
+   <hr/>
+      <b>м.п.</b>
+   <hr/>
+      <b>м.п.</b>
+   <hr/>
+      <b>м.п.</b>
+   <hr/>
+   <b>м.п.</b>
+  </td>
+<td name = "cena">
+   <pr id ="price11" cena = "5">5</pr>
+   <hr/>
+      <pr id ="price12" cena = "8">8</pr>
+         <hr/>
+         <pr id ="price13" cena = "10">10</pr>
+         <hr/>
+        <pr id ="price141" cena = "30">30</pr>/<pr id ="price142" cena = "40">40</pr>/<pr id ="price143" cena = "50">50</pr>
+         <hr/>
+     <pr id ="price151" cena = "40">40</pr>/<pr id ="price152" cena = "50">50</pr>/<pr id ="price153" cena = "60">60</pr>
+</td>
+<td name = "script">
+  <input type="text" id="1.1" size="2" />
+   <hr/>
+  <input type="text" id="1.2" size="2"/>
+         <hr/>
+         <input type="text" id="1.3" size="2"/>
+         <hr/>
+         <input type="text" id="1.4.1" size="1"/>
+         <input type="text" id="1.4.2" size="1"/>
+         <input type="text" id="1.4.3" size="1"/>
+         <hr/>
+         <input type="text" id="1.5.1" size="1"/>
+         <input type="text" id="1.5.2" size="1"/>
+         <input type="text" id="1.5.3" size="1"/>
+</td>
+</tr>
+<tr>
+<tr>
+<td colspan="4" align = "left">
+ 
+<button onclick="checkPrice1();">Подсчитать сумму</button>
+   <p id= "price"></p>
+</td>
+                                               </tr>
+                                              <td colspan="4">
+                                                      <h4><a name="shtrob"></a><i><b>2.Штробление </b></i></h4>
+                                                             </td>
+                                                            </tr>
+<td name = "rabotu" align = "left">
+ <b>1.1</b> Штроб 20х20 мм (ГКЛ/кирпич/бетон)
+   <hr/>
+  <b>1.2</b>  Штроб 40х40 мм (ГКЛ/кирпич/бетон)
+      <hr/>
+        <b>1.3</b>  Штроб 70х70 мм (ГКЛ/кирпич/бетон)
+      <hr/>
+        <b>1.4</b>  Штроб 100х100 мм (ГКЛ/кирпич/бетон)
+      <hr/>
+              <b>1.5</b>  Штробление потолка
+</td>
+<td name = "ed.izm">
+   <b>м.п.</b>
+   <hr/>
+      <b>м.п.</b>
+   <hr/>
+      <b>м.п.</b>
+   <hr/>
+      <b>м.п.</b>
+   <hr/>
+   <b>м.п.</b>
+</td>
+<td name = "cena">
+    <pr id ="price211" cena = "10">10</pr>/<pr id ="price212" cena = "15">15</pr>/<pr id ="price213" cena = "20">20</pr>
+   <hr/>
+      <pr id ="price221" cena = "13">13</pr>/<pr id ="price222" cena = "18">18</pr>/<pr id ="price223" cena = "23">23</pr>
+         <hr/>
+             <pr id ="price231" cena = "18">18</pr>/<pr id ="price232" cena = "25">25</pr>/<pr id ="price233" cena = "55">55</pr>
+         <hr/>
+        <pr id ="price241" cena = "20">20</pr>/<pr id ="price242" cena = "35">35</pr>/<pr id ="price243" cena = "80">80</pr>
+            <hr/>
+                <pr id ="price25" cena = "40">40</pr>
+</td>
+<td name = "script">
+         <input type="text" id="2.1.1" size="1"/>
+         <input type="text" id="2.1.2" size="1"/>
+         <input type="text" id="2.1.3" size="1"/>
+         <hr/>
+         <input type="text" id="2.2.1" size="1"/>
+         <input type="text" id="2.2.2" size="1"/>
+         <input type="text" id="2.2.3" size="1"/>
+         <hr/>
+         <input type="text" id="2.3.1" size="1"/>
+         <input type="text" id="2.3.2" size="1"/>
+         <input type="text" id="2.3.3" size="1"/>
+         <hr/>
+         <input type="text" id="2.4.1" size="1"/>
+         <input type="text" id="2.4.2" size="1"/>
+         <input type="text" id="2.4.3" size="1"/>
+            <hr/>
+         <input type="text" id="2.5" size="2"/>
+
+</td>
+</tr>
+<td colspan="4" align = "left">
+
+<button onclick="checkPrice2();">Подсчитать сумму</button>
+   <p id= "price2"></p>
+<a href="#provodka" align = "right">Наверх</a>
+</td>
+<tr>
+                                                 <td colspan="4">
+                                               <h4><a name="avtomat"></a><i><b>3.Автоматические выключатели,УЗО</b></i></h4>
+                                              </td>
+</tr>
+<td name = "rabotu" align = "left">
+  <b>3.1</b>  Автоматический выключатель однополюсный
+   <hr/>
+  <b>3.2</b>  Автоматический выключатель двухполюсный
+      <hr/>
+        <b>3.3</b>     <ft onmouseover="showLinkImage('f33')" onmouseout="hideLinkImage('f33')">Автоматический выключатель трехполюсный</ft>
+      <div id="f33" style="display: none; position: absolute;">
+        <img src="images/work/avt3P.png" alt="Автоматический выключатель трехполюсный"/>
+        </div>
+      <hr/>
+        <b>3.4</b>  УЗО двухполюсное
+      <hr/>
+        <b>3.5</b> УЗО четырехполюсное 
+      <hr/>
+              <b>3.6</b> Установка реле автоматического переключения
+      <hr/>
+                   <b>3.7</b> Установка счетчика электрического однофазного
+      <hr/>
+                   <b>3.8</b> Установка счетчика электрического трехфазного 
+      <hr/>
+                   <b>3.9</b> Подключение силовой линии в щите
+      <hr/>
+                   <b>3.10</b> Подключение TV и телефонных линий к линии в щитке
+      <hr/>
+                   <b>3.11</b> Магнитный пускатель
+</td>
+<td name = "ed.izm">
+         <b>шт.</b>
+            <hr/>
+             <b>шт.</b>
+          <hr/>
+            <b>шт.</b>
+             <hr/>
+               <b>шт.</b>
+            <hr/>
+            <b>шт.</b>
+              <hr/>
+                 <b>шт.</b>
+            <hr/>
+              <b>шт.</b>
+                 <hr/>
+                   <b>шт.</b>
+                      <hr/>
+         <b>шт.</b>
+               <hr/>
+                  <b>шт.</b>
+                  <hr/>
+                    <b>шт.</b>
+</td>
+<td name = "cena">
+   <pr id ="price31" cena = "35">35</pr>
+   <hr/>
+   <pr id ="price32" cena = "50">50</pr>
+   <hr/>
+      <pr id ="price33" cena = "80">80</pr>
+   <hr/>
+      <pr id ="price34" cena = "70">70</pr>
+   <hr/>
+      <pr id ="price35" cena = "120">120</pr>
+   <hr/>
+      <pr id ="price36" cena = "100">100</pr>
+   <hr/>
+     <pr id ="price37" cena = "250">250</pr>
+   <hr/>
+     <pr id ="price38" cena = "300">300</pr>
+   <hr/>
+     <pr id ="price39" cena = "250">250</pr>
+   <hr/>
+      <pr id ="price310" cena = "150">150</pr>
+   <hr/>
+      <pr id ="price311" cena = "130">130</pr>
+</td>
+<td name = "script">
+   <input type="text" id="3.1" size="2"/>
+   <hr/>
+         <input type="text" id="3.2" size="2"/>
+   <hr/>
+           <input type="text" id="3.3" size="2"/>
+   <hr/>
+      <input type="text" id="3.4" size="2"/>
+   <hr/>
+         <input type="text" id="3.5" size="2"/>
+   <hr/>
+      <input type="text" id="3.6" size="2"/>
+   <hr/>
+      <input type="text" id="3.7" size="2"/>
+   <hr/>
+      <input type="text" id="3.8" size="2"/>
+   <hr/>
+      <input type="text" id="3.9" size="2"/>
+   <hr/>
+      <input type="text" id="3.10" size="2"/>
+   <hr/>
+      <input type="text" id="3.11" size="2"/>
+</td>
+</tr>
+<td colspan="4" align = "left">
+ <script src="js/price_block.js"></script>
+<button onclick="checkPrice3();">Подсчитать сумму</button>
+   <p id= "price3"></p>
+<a href="#provodka" align = "right">Наверх</a>
+
+</td>
+                                                <tr>
+                                              <td colspan="4">
+                                                 <h4><a name="shity"></a><i><b>4.Электрощиты </b></i></h4>
+                                                     </td>
+                                                           </tr>
+<td name = "rabotu" align = "left">
+       <b>4.1</b>  Электрощит наружной установки
+                <hr/>
+            <b>4.2</b>  Электрощит на 8 модулей внутренней установки
+            (гипсокартон/кирпич/бетон)
+           <hr/>
+        <b>4.3</b>  Электрощит на 12 модулей внутренней установки
+            (гипсокартон/кирпич/бетон)
+         <hr/>
+        <b>4.4</b>  Электрощит на 18 модулей внутренней установки
+                (гипсокартон/кирпич/бетон)
+           <hr/>
+        <b>4.5</b> Электрощит на 24 модулей внутренней установки
+                 (гипсокартон/кирпич/бетон)
+              <hr/>
+              <b>4.6</b>
+              <ft onmouseover="showLinkImage('f46')" onmouseout="hideLinkImage('f46')">Электрощит на 36 модулей внутренней установки
+                (гипсокартон/кирпич/бетон)</ft>
+                    <div id="f46" style="display: none; position: absolute;">
+                      <img src="images/work/s36m.png" alt="Электрощит на 36 модулей"/>
+                          </div>
+                  <hr/>
+        <b>4.7</b> Электрощит на 54 модулей внутренней установки
+               (гипсокартон/кирпич/бетон)
+              
+
+</td>
+<td name = "ed.izm">
+          <b>шт.</b>
+            <hr/>
+             <b>шт.</b>
+          <hr/>
+            <b>шт.</b>
+             <hr/>
+               <b>шт.</b>
+            <hr/>
+            <b>шт.</b>
+              <hr/>
+                 <b>шт.</b>
+            <hr/>
+                <b>шт.</b>
+</td>
+<td name = "cena">
+   <pr id ="price41" cena = "200">200</pr>
+        <hr/>
+      <pr id ="price421" cena = "230">230</pr>/<pr id ="price422" cena = "300">300</pr>/<pr id ="price423" cena = "400">400</pr>
+         <hr/>
+         <pr id ="price431" cena = "260">260</pr>/<pr id ="price432" cena = "320">320</pr>/<pr id ="price433" cena = "420">420</pr>
+         <hr/>
+        <pr id ="price441" cena = "280">280</pr>/<pr id ="price442" cena = "340">340</pr>/<pr id ="price443" cena = "440">440</pr>
+         <hr/>
+     <pr id ="price451" cena = "300">300</pr>/<pr id ="price452" cena = "360">360</pr>/<pr id ="price453" cena = "460">460</pr>
+           <hr/>
+     <pr id ="price461" cena = "320">320</pr>/<pr id ="price462" cena = "380">380</pr>/<pr id ="price463" cena = "480">480</pr>
+           <hr/>
+     <pr id ="price471" cena = "350">350</pr>/<pr id ="price472" cena = "400">400</pr>/<pr id ="price473" cena = "500">500</pr>
+</td>
+<td name = "script">
+          <input type="text" id="4.1" size="2"/>
+          <hr/>
+          <input type="text" id="4.2.1" size="1"/>
+         <input type="text" id="4.2.2" size="1"/>
+         <input type="text" id="4.2.3" size="1"/>
+         <hr/>
+         <input type="text" id="4.3.1" size="1"/>
+         <input type="text" id="4.3.2" size="1"/>
+         <input type="text" id="4.3.3" size="1"/>
+         <hr/>
+         <input type="text" id="4.4.1" size="1"/>
+         <input type="text" id="4.4.2" size="1"/>
+         <input type="text" id="4.4.3" size="1"/>
+         <hr/>
+         <input type="text" id="4.5.1" size="1"/>
+         <input type="text" id="4.5.2" size="1"/>
+         <input type="text" id="4.5.3" size="1"/>
+                  <hr/>
+         <input type="text" id="4.6.1" size="1"/>
+         <input type="text" id="4.6.2" size="1"/>
+         <input type="text" id="4.6.3" size="1"/>
+                  <hr/>
+         <input type="text" id="4.7.1" size="1"/>
+         <input type="text" id="4.7.2" size="1"/>
+         <input type="text" id="4.7.3" size="1"/>
+        
+</td>
+</tr>
+<td colspan="4" align = "left">
+
+<button onclick="checkPrice4();">Подсчитать сумму</button>
+   <p id= "price4"></p>
+     <a href="#provodka" align = "right">Наверх</a>
+</td>
+                                                <tr>
+                                              <td colspan="4">
+                                                 <h4><a name="roz"></a><i><b>5. Розетки, Выключатели </b></i></h4>
+                                                     </td>
+                                                           </tr>
+<td name = "rabotu" align = "left">
+       <b>5.1</b>  Розетка наружная
+                <hr/>
+            <b>5.2</b>  Розетка внутренняя (гипсокартон/кирпич/бетон)
+           <hr/>
+        <b>5.3</b>  Отверстия для подрозетника, распаячной коробки
+               (гипсокартон/кирпич/бетон)
+         <hr/>
+        <b>5.4</b>  Монтаж подрозетника 
+           <hr/>
+        <b>5.5</b> Установка механизма внутренней розетки
+              <hr/>
+              <b>5.6</b>
+             Коробки распаячной наружной установка
+                  <hr/>
+        <b>5.7</b> Коммутация клеммниками WAGO
+                            <hr/>
+        <b>5.8</b> Замена розетки внутренней                 
+        <hr/>
+        <b>5.9</b> Розетка для электроплиты (наружная/внутренняя)    
+
+</td>
+<td name = "ed.izm">
+          <b>шт.</b>
+            <hr/>
+             <b>шт.</b>
+          <hr/>
+            <b>шт.</b>
+             <hr/>
+               <b>шт.</b>
+            <hr/>
+            <b>шт.</b>
+              <hr/>
+                 <b>шт.</b>
+            <hr/>
+                 <b>шт.</b>
+            <hr/>
+                       <b>шт.</b>
+            <hr/>
+                        <b>шт.</b>
+</td>
+<td name = "cena">
+ <pr id ="price51" cena = "45">45</pr>
+   <hr/>
+      <pr id ="price52" cena = "40">40</pr>
+         <hr/>
+         <pr id ="price531" cena = "20">20</pr>/<pr id ="price532" cena = "30">30</pr>/<pr id ="price533" cena = "40">40</pr>
+         <hr/>
+        <pr id ="price54" cena = "15">15</pr>
+         <hr/>
+     <pr id ="price55" cena = "35">35</pr>
+           <hr/>
+     <pr id ="price56" cena = "50">50</pr>
+           <hr/>
+     <pr id ="price57" cena = "70">70</pr>
+            <hr/>
+     <pr id ="price58" cena = "50">50</pr>
+            <hr/>
+     <pr id ="price591" cena = "150">150</pr>/<pr id ="price592" cena = "250">250</pr>
+</td>
+<td name = "script">
+          <input type="text" id="5.1" size="2"/>
+          <hr/>
+         <input type="text" id="5.2" size="2"/>
+          <hr/>
+         <input type="text" id="5.3.1" size="1"/>
+         <input type="text" id="5.3.2" size="1"/>
+         <input type="text" id="5.3.3" size="1"/>
+         <hr/>
+            <input type="text" id="5.4" size="2"/>
+          <hr/>
+              <input type="text" id="5.5" size="2"/>
+          <hr/>
+             <input type="text" id="5.6" size="2"/>
+           <hr/>
+              <input type="text" id="5.7" size="2"/>
+             <hr/>
+                <input type="text" id="5.8" size="2"/>
+                <hr/>
+                  <input type="text" id="5.9.1" size="1"/>
+                      <input type="text" id="5.9.2" size="1"/>
+        
+</td>
+</tr>
+<td colspan="4" align = "left">
+ <script src="js/price_block.js"></script>
+<button onclick="checkPrice5();">Подсчитать сумму</button>
+   <p id= "price5"></p>
+     <a href="#provodka" align = "right">Наверх</a>
+</td>
+
+                                                <tr>
+                                              <td colspan="4">
+                                                 <h4><a name="bra"></a><i><b>6. Люстры,БРА.Светильники </b></i></h4>
+                                                     </td>
+                                                           </tr>
+<td name = "rabotu" align = "left">
+       <b>6.1</b>  Люстры монтаж и подключение
+                <hr/>
+            <b>6.2</b>  Сборка люстры (простой/сложной)
+           <hr/>
+        <b>6.3</b>  Бра (светильник настенный)
+         <hr/>
+        <b>6.4</b>  Светильник точечный 
+           <hr/>
+        <b>6.5</b> Сверление отверстий под установку точечного светильника в
+          гипсокартоне
+              <hr/>
+              <b>6.6</b>
+             Сверление отверстий под установку точечного светильника в
+               реечном потолке
+                  <hr/>
+        <b>6.7</b> Светильник потолочный типа "Армстронг"
+                            <hr/>
+        <b>6.8</b> Светильник "Выход"                   
+
+</td>
+<td name = "ed.izm">
+          <b>шт.</b>
+            <hr/>
+             <b>шт.</b>
+          <hr/>
+            <b>шт.</b>
+             <hr/>
+               <b>шт.</b>
+            <hr/>
+            <b>шт.</b>
+              <hr/>
+                 <b>шт.</b>
+            <hr/>
+                 <b>шт.</b>
+            <hr/>
+                       <b>шт.</b>
+        
+</td>
+<td name = "cena">
+ от 120
+   <hr/>
+      <pr id ="price62" cena = "150">150</pr>
+         <hr/>
+         <pr id ="price63" cena = "70">70</pr>
+         <hr/>
+        <pr id ="price64" cena = "45">45</pr>
+         <hr/>
+     <pr id ="price65" cena = "40">40</pr>
+           <hr/>
+     <pr id ="price66" cena = "50">50</pr>
+           <hr/>
+     <pr id ="price67" cena = "80">80</pr>
+            <hr/>
+     <pr id ="price68" cena = "80">80</pr>
+  
+</td>
+<td name = "script">
+          По месту.
+          <hr/>
+         <input type="text" id="6.2" size="2"/>
+          <hr/>
+         <input type="text" id="6.3" size="2"/>
+         <hr/>
+            <input type="text" id="6.4" size="2"/>
+          <hr/>
+              <input type="text" id="6.5" size="2"/>
+          <hr/>
+             <input type="text" id="6.6" size="2"/>
+           <hr/>
+              <input type="text" id="6.7" size="2"/>
+             <hr/>
+                <input type="text" id="6.8" size="2"/>
+               
+        
+</td>
+</tr>
+<td colspan="4" align = "left">
+
+<button onclick="checkPrice6();">Подсчитать сумму</button>
+   <p id= "price6"></p>
+     <a href="#provodka" align = "right">Наверх</a>
+</td>
+
+                                                <tr>
+                                              <td colspan="4">
+                                                 <h4><a name="lamp"></a><i><b>7. Замена ламп,дросселей.трансформаторов и т.д. </b></i></h4>
+                                                     </td>
+                                                           </tr>
+<td name = "rabotu" align = "left">
+       <b>7.1</b>  Установка (замена) трансформатора, дросселя
+                <hr/>
+            <b>7.2</b>  Замена стартера
+           <hr/>
+        <b>7.3</b>  Замена люминесцентной лампы
+         <hr/>
+        <b>7.4</b>  Замена лампы накаливания,галогенной,светодиодной,энергосберегающей
+           <hr/>
+        <b>7.5</b> Замена патрона в светильнике 
+
+</td>
+<td name = "ed.izm">
+          <b>шт.</b>
+            <hr/>
+             <b>шт.</b>
+          <hr/>
+            <b>шт.</b>
+             <hr/>
+               <b>шт.</b>
+            <hr/>
+            <b>шт.</b>
+          
+</td>
+<td name = "cena">
+ <pr id ="price71" cena = "50">50</pr>
+   <hr/>
+      <pr id ="price72" cena = "30">30</pr>
+         <hr/>
+         <pr id ="price73" cena = "20">20</pr>
+         <hr/>
+        <pr id ="price74" cena = "15">15</pr>
+         <hr/>
+     <pr id ="price75" cena = "50">50</pr>
+
+</td>
+<td name = "script">
+          <input type="text" id="7.1" size="2"/>
+          <hr/>
+         <input type="text" id="7.2" size="2"/>
+          <hr/>
+         <input type="text" id="7.3" size="2"/>
+      
+         <hr/>
+            <input type="text" id="7.4" size="2"/>
+          <hr/>
+              <input type="text" id="7.5" size="2"/>
+
+        
+</td>
+</tr>
+<td colspan="4" align = "left">
+
+<button onclick="checkPrice7();">Подсчитать сумму</button>
+   <p id= "price7"></p>
+     <a href="#provodka" align = "right">Наверх</a>
+</td>
+                                                <tr>
+                                              <td colspan="4">
+                                                 <h4><a name="obor"></a><i><b>8. Установка оборудования </b></i></h4>
+                                                     </td>
+                                                           </tr>
+<td name = "rabotu" align = "left">
+       <b>8.1</b>  Звонок электрический
+                <hr/>
+            <b>8.2</b>  Кнопка звонка электрического
+           <hr/>
+        <b>8.3</b>  Установка разветвителя телефонного и телевизионного 
+         <hr/>
+        <b>8.4</b> Установка стабилизатора напряжения для силовых линий 
+           <hr/>
+        <b>8.5</b> Установка и подключение вентилятора канального накладного
+              <hr/>
+              <b>8.6</b>Видеодомофона (вызывной панели)
+                  <hr/>
+        <b>8.7</b> Видеодомофона (монитора)
+                            <hr/>
+        <b>8.8</b> Вытяжки кухонной монтаж с подключением                 
+        <hr/>
+        <b>8.9</b> Сушилки электрической для рук установка    
+            <hr/>
+        <b>8.10</b> Сушилки электрической для рук установка 
+         <hr/>
+        <b>8.11</b> Тёплого пола электрического укладка 
+         <hr/>
+        <b>8.12</b> Реостат (диммер) для регулировки нагрева теплого пола
+</td>
+<td name = "ed.izm">
+          <b>шт.</b>
+            <hr/>
+             <b>шт.</b>
+          <hr/>
+            <b>шт.</b>
+             <hr/>
+               <b>шт.</b>
+            <hr/>
+            <b>шт.</b>
+              <hr/>
+                 <b>шт.</b>
+            <hr/>
+                 <b>шт.</b>
+            <hr/>
+                       <b>шт.</b>
+            <hr/>
+                        <b>шт.</b>
+                         <hr/>
+                        <b>шт.</b>
+                         <hr/>
+                        <b>кв.м.</b>
+                         <hr/>
+                        <b>шт.</b>
+</td>
+<td name = "cena">
+ <pr id ="price81" cena = "100">100</pr>
+   <hr/>
+      <pr id ="price82" cena = "50">50</pr>
+         <hr/>
+         <pr id ="price83" cena = "150">150</pr>
+         <hr/>
+        <pr id ="price84" cena = "400">400</pr>
+         <hr/>
+     <pr id ="price85" cena = "200">200</pr>
+           <hr/>
+     <pr id ="price86" cena = "450">450</pr>
+           <hr/>
+     <pr id ="price87" cena = "500">500</pr>
+            <hr/>
+     <pr id ="price88" cena = "250">250</pr>
+            <hr/>
+     <pr id ="price89" cena = "250">250</pr>
+               <hr/>
+     <pr id ="price810" cena = "200">200</pr>
+               <hr/>
+     <pr id ="price811" cena = "100">100</pr>
+               <hr/>
+     <pr id ="price812" cena = "60">60</pr>
+</td>
+<td name = "script">
+          <input type="text" id="8.1" size="2"/>
+          <hr/>
+         <input type="text" id="8.2" size="2"/>
+          <hr/>
+         <input type="text" id="8.3" size="2"/>
+         <hr/>
+            <input type="text" id="8.4" size="2"/>
+          <hr/>
+              <input type="text" id="8.5" size="2"/>
+          <hr/>
+             <input type="text" id="8.6" size="2"/>
+           <hr/>
+              <input type="text" id="8.7" size="2"/>
+             <hr/>
+                <input type="text" id="8.8" size="2"/>
+                <hr/>
+                  <input type="text" id="8.9" size="2"/>
+                <hr/>
+                  <input type="text" id="8.10" size="2"/>
+                                  <hr/>
+                  <input type="text" id="8.11" size="2"/>
+                                  <hr/>
+                  <input type="text" id="8.12" size="2"/>
+        
+</td>
+</tr>
+<td colspan="4" align = "left">
+
+<button onclick="checkPrice8();">Подсчитать сумму</button>
+   <p id= "price8"></p>
+     <a href="#provodka" align = "right">Наверх</a>
+</td>
+                                                <tr>
+                                              <td colspan="4">
+                                                 <h4><a name="dem"></a><i><b>9. Демонтажные работы </b></i></h4>
+                                                     </td>
+                                                           </tr>
+<td name = "rabotu" align = "left">
+       <b>9.1</b>  Демонтаж автомата
+                <hr/>
+            <b>9.2</b>  Демонтаж Кабельканала (короба)
+           <hr/>
+        <b>9.3</b>  Демонтаж Проводки электрической в кабельканале
+         <hr/>
+        <b>9.4</b> Демонтаж Проводки электрической открытой
+           <hr/>
+        <b>9.5</b> Демонтаж Счетчика электрического 
+              <hr/>
+              <b>9.6</b>Демонтаж Люстры, бра
+                  <hr/>
+        <b>9.7</b> Демонтаж Точки электрической 
+</td>
+<td name = "ed.izm">
+          <b>шт.</b>
+            <hr/>
+             <b>м.п.</b>
+          <hr/>
+            <b>м.п.</b>
+             <hr/>
+               <b>м.п.</b>
+            <hr/>
+            <b>шт.</b>
+              <hr/>
+                 <b>шт.</b>
+            <hr/>
+                 <b>шт.</b>
+</td>
+<td name = "cena">
+    <pr id ="price91" cena = "5">5</pr>
+   <hr/>
+      <pr id ="price92" cena = "3">3</pr>
+         <hr/>
+         <pr id ="price93" cena = "2">2</pr>
+         <hr/>
+        <pr id ="price94" cena = "2">2</pr>
+         <hr/>
+     <pr id ="price95" cena = "50">50</pr>
+           <hr/>
+     <pr id ="price96" cena = "50">50</pr>
+           <hr/>
+     <pr id ="price97" cena = "20">20</pr>
+
+</td>
+<td name = "script">
+          <input type="text" id="9.1" size="2"/>
+          <hr/>
+         <input type="text" id="9.2" size="2"/>
+          <hr/>
+         <input type="text" id="9.3" size="2"/>
+         <hr/>
+            <input type="text" id="9.4" size="2"/>
+          <hr/>
+              <input type="text" id="9.5" size="2"/>
+          <hr/>
+             <input type="text" id="9.6" size="2"/>
+           <hr/>
+              <input type="text" id="9.7" size="2"/>
+</td>
+</tr>
+<td colspan="4" align = "left">
+
+<button onclick="checkPrice9();">Подсчитать сумму</button>
+   <p id= "price9"></p>
+     <a href="#provodka" align = "right">Наверх</a>
+</td>                                                <tr>
+                                              <td colspan="4">
+                                                 <h4><a name="podg"></a><i><b>10. Подготовительные работы </b></i></h4>
+                                                     </td>
+                                                           </tr>
+<td name = "rabotu" align = "left">
+       <b>10.1</b>  Сверление сквозное в стене толщиной до 25 см.
+         (мягкие стены/кирпич/бетон)
+                <hr/>
+            <b>8.2</b> Сверление сквозное в стене толщиной от 25 см.
+                 (мягкие стены/кирпич/бетон)
+</td>
+<td name = "ed.izm">
+          <b>шт.</b>
+            <hr/>
+             <b>шт.</b>
+</td>
+<td name = "cena">
+ <pr id ="price1011" cena = "20">20</pr>/<pr id ="price1012" cena = "30">30</pr>/<pr id ="price1013" cena = "40">40</pr>
+   <hr/>
+      <pr id ="price1021" cena = "30">30</pr>/<pr id ="price1022" cena = "40">40</pr>/<pr id ="price1023" cena = "50">50</pr>
+</td>
+<td name = "script">
+           <input type="text" id="10.1.1" size="1"/>
+         <input type="text" id="10.1.2" size="1"/>
+         <input type="text" id="10.1.3" size="1"/>
+          <hr/>
+          <input type="text" id="10.2.1" size="1"/>
+         <input type="text" id="10.2.2" size="1"/>
+         <input type="text" id="10.2.3" size="1"/>
+
+        
+</td>
+</tr>
+<td colspan="4" align = "left">
+
+<button onclick="checkPrice10();">Подсчитать сумму</button>
+   <p id= "price10"></p>
+     <a href="#provodka" align = "right">Наверх</a>
+</td>
+                                                <tr>
+                                              <td colspan="4">
+                                                 <h4><a name="uslugi"></a><i><b>11. Услуги Электрика </b></i></h4>
+                                                     </td>
+                                                           </tr>
+<td name = "rabotu" align = "left">
+       <b>11.1</b>  Выезд мастера для составления сметы
+                <hr/>
+            <b>11.2</b>  Выезд мастера аварийный
+           <hr/>
+        <b>11.3</b>  Коэффициент на работы свыше 3 метров 
+         <hr/>
+        <b>11.4</b> Услуга по покупке материалов, зап. частей и прочее 
+           <hr/>
+        <b>11.5</b> Минимальная стоимость электромонтажных работ в Киеве
+</td>
+<td name = "ed.izm">
+
+</td>
+<td name = "cena">
+ Бесплатно
+   <hr/>
+     150
+         <hr/>
+         1.4
+         <hr/>
+       дог.
+         <hr/>
+     500
+</td>
+<td name = "script">
+        
+</td>
+</tr>
+<td colspan="4" align = "left">
+     <a href="#provodka" align = "right">Наверх</a>
+</td>
+                                                <tr>
+                                              <td colspan="4">
+                                                 <h4><a name="prim"></a><i><b>В стоимость работ не включена стоимость расходных материалов <br>и не входящих в комплект поставки
+конкретного изделия предметов.<br>Работы, с нестандартными материалами и не предусмотренные данным прейскурантом,<br>выполняются по
+договорным ценам.<br>
+Прайс-лист имеет целью показать уровень цен на наши услуги, <br>окончательную стоимость работ по
+электрике считает мастер на месте.</b></i></h4>
+                                                     </td>
+                                                           </tr>
+
+</table>
+</article>
+
+
+<footer>
+<pre>
+     <b>Пишите</b>                                                                                                                                            Site created by <a href ="https://vk.com/id361845912">Valik VVzhik</a>    
+ zhylenko.work@gmail.com                                                                                                                                      © 2016  
+
+</pre>
+</footer>
+
+ </body>
 </html>
