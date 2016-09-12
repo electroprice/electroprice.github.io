@@ -1,3 +1,7 @@
+/* First JS code v2.0
+*****created by Valik V/VZhIK*****
+2016
+*/
 function checkPrice(cena,inp,tabl,res){
 
  var i = res;
